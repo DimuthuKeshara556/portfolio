@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden; /* To prevent horizontal scrollbar */
+      }
+
+      .wave-divider {
+          position: relative;
+          background-color: #3498db; /* Change the background color as needed */
+          height: 100px;
+          overflow: hidden;
+      }
+
+      .wave {
+          fill: #ffffff; /* Change the wave color as needed */
+      }
+      .custom-shape-divider-bottom-1702972979 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1702972979 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1702972979 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1702972979 svg {
+        width: calc(118% + 1.3px);
+        height: 209px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1702972979 svg {
+        width: calc(112% + 1.3px);
+        height: 150px;
+    }}
+  </style>
+  </head>
+  <!-- <body>
+    <header>
+      <p>Dimuthu <span>Keshara</span></p>
+      <img src="./Images/menu.gif" alt="menu-Image" />
+    </header>
+    <div class="main-container shadow">
+      <img src="./Images/main.png" alt="main image" />
+      <div class="letter">
+        <div class="left-part H"></div>
+        <div class="middle-part H"></div>
+        <div class="right-part H"></div>
+        <h1>ELLO</h1>
+      </div>
+      <h2>m</h2>
+      <p>ui/ux designer & developer</p>
+    </div> -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 100" preserveAspectRatio="none" class="wave">
+          <path d="M0,60 C150,100 300,0 500,60 C700,120 850,30 1200,60 L1200,0 L0,0 Z"></path>
+      </svg>
+  </div>
+    <div class="custom-shape-divider-bottom-1702987813">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+  </div>
+  </body>
+</html> -->
