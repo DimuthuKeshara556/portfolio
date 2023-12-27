@@ -720,7 +720,7 @@ textarea {
     height: 100%;
   }
   .star-left-down {
-    left: 0;
+    left: 10%;
   }
   .body {
     background-color: #007bff;
@@ -763,15 +763,15 @@ textarea {
    
   }
   .education-parent {
-    width: 250px;
+    width: 220px;
   }
   .edu-logo {
-    font-size: 30px;
+    font-size: 25px;
     top: 15px;
     left: -40px;
   }
   .edu_logoR {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     top: 15px;
     right: -40px;
@@ -827,6 +827,9 @@ textarea {
     top: 120px;
     right: 2px;
     z-index: 20;
+  }
+  .align-top{
+    top: 120px;
   }
   .main-container p {
     font-size: 20px;
