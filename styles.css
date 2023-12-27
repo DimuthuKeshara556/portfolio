@@ -504,23 +504,23 @@ button:hover {
   width: 50vw;
 }
 .edu-logo {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   background-color: rgb(186, 186, 243);
   padding: 20px;
   border-radius: 50%;
   position: absolute;
-  top: -35px;
+  top: -20px;
   left: -55px;
 }
 .edu_logoR {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   background-color: rgb(186, 186, 243);
   padding: 20px;
   border-radius: 50%;
   position: absolute;
-  top: -35px;
+  top: -40px;
   right: -55px;
 }
 .edu-relative {
@@ -550,8 +550,8 @@ button:hover {
 .project-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 27px;
-  grid-row-gap: 19px;
+  grid-column-gap: 36px;
+  grid-row-gap: 27px;
   height: 100%;
   width: 80vw;
   justify-content: center;
@@ -566,6 +566,13 @@ button:hover {
 }
 .project-parent p {
   text-align: center;
+  line-height: 1.5;
+  
+}
+.grid-item{
+  width: 100%;
+  padding: 15px;
+  word-wrap: break-word;
   height: auto;
 }
 .project-parent button {
@@ -574,7 +581,8 @@ button:hover {
 .project-center {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  height: auto;
+  max-width: 300px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -587,7 +595,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px 20px;
   margin-bottom: 50px;
 }
 .section-hedding {
@@ -716,6 +724,12 @@ textarea {
 
 /** For mobile devices **/
 @media (max-width: 767px) {
+  .subSection {
+    padding-left: 0px;
+  }
+  .section-hedding {
+    font-size: 30px;
+  }
   #skils-section {
     height: 100%;
   }
@@ -726,41 +740,52 @@ textarea {
     background-color: #007bff;
   }
   .parent2 {
-    height: 100%;
+    height: 80%;
     width: 300px;
   }
   .div10 img {
     width: auto;
-    height: 250px;
-    margin-left: 0px;
-    border-radius: 1rem;
+    height: 180px;
+    margin-left: 50px;
+    border-radius: 2rem;
   }
   .div40 {
     grid-area: 4 / 1 / 4 / 4;
   }
   .div20 img {
-    height: 30px;
+    height: 20px;
     margin-left: 5px;
   }
   .div20 h1 {
-    font-size: 8rem;
-    margin: 0 20px;
+    font-size: 5rem;
+    margin: 0 10px;
   }
   .div30 h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   .div40 p {
-    padding: 20px;
-    width: 300px;
+    width: 220px;
     height: 100%;
-    padding-right: 20px;
+    margin: 40px;
     text-align: center;
-    margin-left: 0;
+    margin-top: 0;
+    font-size: 15px;
+    padding-top: 0px;
   }
   .project-parent {
     display: grid;
     grid-template-columns: 1fr;
-   
+    grid-template-rows:auto;
+    
+  }
+  #project-section {
+    padding: 50px 0px;
+  }
+  .project-center {
+    max-width: 280px;
+  }
+  #education-section{
+    padding-top: 20px;
   }
   .education-parent {
     width: 220px;
