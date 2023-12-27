@@ -565,7 +565,7 @@ button:hover {
   border-radius: 20px;
 }
 .project-parent p {
-  max-width: 250px;
+  text-align: center;
   height: auto;
 }
 .project-parent button {
@@ -574,11 +574,11 @@ button:hover {
 .project-center {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 0px;
+  padding: 40px 20px;
   border-radius: 30px;
 }
 #project-section {
@@ -760,7 +760,7 @@ textarea {
   .project-parent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+   
   }
   .education-parent {
     width: 250px;
