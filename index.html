@@ -12,28 +12,24 @@
       <header>
         <div class="headerSection">
           <p>Dimuthu <span>Keshara</span></p>
-          <img
-            src="./Images/menu.png"
-            alt="menu-Image"
-            onclick="toggleMenu()"
+          <input
+            class="menu-icon"
+            type="checkbox"
+            id="menu-icon"
+            name="menu-icon"
           />
+          <label for="menu-icon"></label>
+          <nav class="nav">
+            <ul >
+            <li  onclick="toggleMenu()"><a href="#home-section">Home</a></li>
+            <li onclick="toggleMenu()"><a href="#about-section">About</a></li>
+            <li onclick="toggleMenu()"><a href="#education-section">Education</a></li>
+            <li onclick="toggleMenu()"><a href="#skils-section">Skils</a></li>
+            <li onclick="toggleMenu()"><a href="#project-section">Project</a></li>
+            <li onclick="toggleMenu()"><a href="#contact_us">Contact Us</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul id="navBar">
-            <img
-              class="menuImg"
-              src="./Images/close.png"
-              alt="menu-Image"
-              onclick="toggleMenu()"
-            />
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#education-section">Education</a></li>
-            <li><a href="#skils-section">Skils</a></li>
-            <li><a href="#project-section">Project</a></li>
-            <li><a href="#contact_us">Contact Us</a></li>
-          </ul>
-        </nav>
       </header>
       <!-- Home section -->
       <div class="main-container" id="home-section">
@@ -68,7 +64,7 @@
         <img class="star" src="./Images/star.png" alt="star" />
       </div>
     </div>
-<!-- custom wave shape -->
+    <!-- custom wave shape -->
     <div class="custom-shape-divider-top-1702990715">
       <svg
         data-name="Layer 1"
@@ -90,7 +86,7 @@
           <img src="./Images/test.jpg" alt="profile_Image" />
         </div>
         <div class="about-div2">
-          <img class="comma" src="./Images/coma.png" alt="comma" />
+          <img src="./Images/coma.png" alt="comma" />
           <h1>m</h1>
         </div>
         <div class="about-name">
@@ -107,7 +103,7 @@
         </div>
       </div>
     </section>
-<!-- Education Section -->
+    <!-- Education Section -->
     <section class="center" id="education-section">
       <h2 class="section-hedding">Education</h2>
       <div class="education-parent">
@@ -133,88 +129,53 @@
         </div>
       </div>
     </section>
-<!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skils-section">
       <h2 class="section-hedding">Skills</h2>
       <h4>Front-End</h4>
-      <div class="parent">
-        <div class="skill-item1">
-          <img class="grid-img" src="./Images/icon/html.png" alt="html_Image" />
-        </div>
-        <div class="skill-item2">
-          <img class="grid-img" src="./Images/icon/css.png" alt="css_Image" />
-        </div>
-        <div class="skill-item3">
-          <img
-            class="grid-img"
-            src="./Images/icon/javascript.png"
-            alt="js_Image"
-          />
-        </div>
-        <div class="skill-item4">
-          <img
-            class="grid-img"
-            src="./Images/icon/react.png"
-            alt="react_Image"
-          />
-        </div>
-        <div class="skill-item5">
-          <img
-            class="grid-img"
-            src="./Images/icon/tailwind.png"
-            alt="tailwind_Image"
-          />
-        </div>
+      <div class="grid-div">
+        <img class="grid-img" src="./Images/icon/html.png" alt="html_Image" />
+        <img class="grid-img" src="./Images/icon/css.png" alt="css_Image" />
+        <img
+          class="grid-img"
+          src="./Images/icon/javascript.png"
+          alt="js_Image"
+        />
+        <img class="grid-img" src="./Images/icon/react.png" alt="react_Image" />
+        <img
+          class="grid-img"
+          src="./Images/icon/tailwind.png"
+          alt="tailwind_Image"
+        />
       </div>
       <h4>Designing</h4>
-      <div class="parent">
-        <div class="skill-item1">
-          <img
-            class="grid-img"
-            src="./Images/icon/figma.png"
-            alt="figma_Image"
-          />
-        </div>
-        <div class="skill-item2">
-          <img
-            class="grid-img"
-            src="./Images/icon/adobe-xd.png"
-            alt="xd_Image"
-          />
-        </div>
-        <div class="skill-item3">
-          <img
-            class="grid-img"
-            src="./Images/icon/adobe-illustrator.png"
-            alt="ai_Image"
-          />
-        </div>
-        <div class="skill-item4">
-          <img
-            class="grid-img"
-            src="./Images/icon/adobe-photoshop.png"
-            alt="ps_Image"
-          />
-        </div>
+      <div class="grid-div">
+        <img class="grid-img" src="./Images/icon/figma.png" alt="figma_Image" />
+        <img class="grid-img" src="./Images/icon/adobe-xd.png" alt="xd_Image" />
+        <img
+          class="grid-img"
+          src="./Images/icon/adobe-illustrator.png"
+          alt="ai_Image"
+        />
+        <img
+          class="grid-img"
+          src="./Images/icon/adobe-photoshop.png"
+          alt="ps_Image"
+        />
       </div>
       <h4>IOT</h4>
-      <div class="parent">
-        <div class="skill-item1">
-          <img
-            class="grid-img"
-            src="./Images/icon/arduino.png"
-            alt="Arduino_Image"
-          />
-        </div>
+      <div class="grid-div">
+        <img
+          class="grid-img"
+          src="./Images/icon/arduino.png"
+          alt="Arduino_Image"
+        />
       </div>
       <h4>Version Control</h4>
-      <div class="parent">
-        <div class="skill-item1">
-          <img class="grid-img" src="./Images/icon/git.png" alt="git_Image" />
-        </div>
-      </div>
+      <img class="grid-img" src="./Images/icon/git.png" alt="git_Image" />
     </section>
-<!-- Project Section -->
+
+    <!-- Project Section -->
     <section id="project-section">
       <h2 class="section-hedding">Project</h2>
       <h3 class="subSection">Front-End projects</h3>
@@ -287,7 +248,11 @@
             <p>API</p>
           </div>
           <div class="grid-item">
-            <p>Combine a geolocation API with an IP address information API to build an app that tracks and displays the location of any given IP address.</p>
+            <p>
+              Combine a geolocation API with an IP address information API to
+              build an app that tracks and displays the location of any given IP
+              address.
+            </p>
           </div>
 
           <a
@@ -356,7 +321,7 @@
             <img src="./Images/icon/github-icon.png" alt="Button Image" />
           </a>
         </div> -->
-      </div> 
+      </div>
       <h3 class="subSection">UI / UX projects</h3>
       <div class="project-parent">
         <div class="project-center shadow">
@@ -473,8 +438,9 @@
       </div>
     </section>
     <footer>
-      <p>Designed and Developed by Dimuthu keshara.
-        <span>&#174;</span>All Rights Reserved <span id="currentYear"></span>
+      <p>
+        Designed and Developed by Dimuthu keshara. <span>&#174;</span>All Rights
+        Reserved <span id="currentYear"></span>
       </p>
     </footer>
     <script src="script.js"></script>
