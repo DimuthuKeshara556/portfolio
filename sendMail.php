@@ -1,7 +1,7 @@
 <?php
-$name = $_POST["name"];
+$name = $_POST["firstName"];
 $email = $_POST["email"];
-$message = $_POST["message"];
+$message = $_POST["msg"];
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

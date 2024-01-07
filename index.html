@@ -20,13 +20,19 @@
           />
           <label for="menu-icon"></label>
           <nav class="nav">
-            <ul >
-            <li  onclick="toggleMenu()"><a href="#home-section">Home</a></li>
-            <li onclick="toggleMenu()"><a href="#about-section">About</a></li>
-            <li onclick="toggleMenu()"><a href="#education-section">Education</a></li>
-            <li onclick="toggleMenu()"><a href="#skils-section">Skils</a></li>
-            <li onclick="toggleMenu()"><a href="#project-section">Project</a></li>
-            <li onclick="toggleMenu()"><a href="#contact_us">Contact Us</a></li>
+            <ul>
+              <li onclick="toggleMenu()"><a href="#home-section">Home</a></li>
+              <li onclick="toggleMenu()"><a href="#about-section">About</a></li>
+              <li onclick="toggleMenu()">
+                <a href="#education-section">Education</a>
+              </li>
+              <li onclick="toggleMenu()"><a href="#skils-section">Skils</a></li>
+              <li onclick="toggleMenu()">
+                <a href="#project-section">Project</a>
+              </li>
+              <li onclick="toggleMenu()">
+                <a href="#contact_us">Contact Us</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -272,9 +278,8 @@
           </div>
           <div class="grid-item">
             <p>
-             
-I have successfully completed this challenge, employing React Router and Tailwind CSS.
-😜
+              I have successfully completed this challenge, employing React
+              Router and Tailwind CSS. 😜
             </p>
           </div>
 
@@ -429,10 +434,75 @@ I have successfully completed this challenge, employing React Router and Tailwin
     </section>
 
     <!-- Contact Section -->
-
     <section id="contact_us">
       <h2 class="section-hedding hidden">Contact us</h2>
-      <div class="parent-contact">
+      <div class="container">
+        <div class="form-container">
+          <form id="userForm">
+            <div class="step" id="step1">
+              <h3>Connect with US!</h3>
+              <div class="input-container">
+                <input type="text" id="firstName" name="firstName" required />
+                <label for="firstName" class="label">Name:</label>
+                <div class="underline"></div>
+              </div>
+              <button
+                style="display: none"
+                id="nextBtn"
+                type="button"
+                onclick="nextStep(2)"
+              >
+                Next
+              </button>
+            </div>
+
+            <div class="step" id="step2">
+              <h3>Please Enter the Email</h3>
+
+              <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <div class="underline"></div>
+              </div>
+              <button type="button" onclick="prevStep(1)">Previous</button>
+              <button style="display: none" type="button" onclick="nextStep(3)">
+                Next
+              </button>
+            </div>
+
+            <div class="step" id="step3">
+              <h3>Type your massage</h3>
+              <div class="input-container">
+                <label for="massage">Massage:</label>
+                <input type="text" id="msg" name="msg" />
+                <div class="underline"></div>
+              </div>
+
+              <button type="button" onclick="prevStep(2)">Previous</button>
+              <button style="display: none" type="button" onclick="nextStep(4)">
+                Next
+              </button>
+            </div>
+
+            <div class="step" id="step4">
+              <h3>Double check your email and Submit</h3>
+              <div id="reviewDetails"></div>
+              <button type="button" onclick="prevStep(3)">Previous</button>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="imgcontainer">
+          <img src="./Images/art.png" />
+
+          <div class="neon-text">
+            <span id="typed-text"></span>
+            <span id="cursor"></span>
+            <div class="trapezoid"></div>
+          </div>
+        </div>
+
         <div class="links">
           <a href="https://www.linkedin.com/in/dimuthu-keshara-a3a87429b">
             <img src="./Images/icon/linkedin.png" alt="linkdin"
@@ -440,24 +510,10 @@ I have successfully completed this challenge, employing React Router and Tailwin
           <a href="https://github.com/DimuthuKeshara556"
             ><img src="./Images/icon/github-icon.png" alt="github"
           /></a>
+          <a href="#" id="homeButton"
+            ><img src="./Images/icon/up-Arrow.png" alt="Home"
+          /></a>
         </div>
-
-        <div class="form_class">
-          <p>Connect With Us: Let's Journey Together</p>
-          <form action="sendMail.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button class="submit shadow">Send Message</button>
-          </form>
-        </div>
-        <img class="back" src="./Images/hand.png" alt="test image" />
       </div>
     </section>
     <footer>
@@ -466,6 +522,7 @@ I have successfully completed this challenge, employing React Router and Tailwin
         Reserved <span id="currentYear"></span>
       </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
