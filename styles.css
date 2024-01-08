@@ -997,7 +997,7 @@ textarea {
   width: 200px;
   padding-right: 50px;
 } */
-/* .button {
+.button {
   display: flex;
   text-decoration: none;
   padding: 10px;
@@ -1011,7 +1011,7 @@ textarea {
   font-weight: 500;
   width: fit-content;
   border-radius: 50px;
-} */
+}
 
 .button img {
   width: 20px;

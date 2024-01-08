@@ -93,36 +93,36 @@ document.getElementById("userForm").action = "processForm.php";
 document.getElementById("userForm").method = "post";
 
 
-$('#userForm').submit(function (event) {
-  event.preventDefault();
-  $('#typed-text').text(`We are freind now! Let's journey together `);
-});
-
 // $('#userForm').submit(function (event) {
 //   event.preventDefault();
 //   $('#typed-text').text(`We are freind now! Let's journey together `);
-  
-//   const formData = {
-//     firstName: $('#firstName').val(),
-//     email: $('#email').val(),
-//     msg: $('#msg').val()
-//   };
-
-//   // Send form data to server
-//   $.ajax({
-//     type: 'POST',
-//     url: 'sendMail.php',
-//     data: formData,
-//     success: function (response) {
-//       // Handle the response from the server (if needed)
-//       console.log(response);
-//       $('#typed-text').text(`We are friends now! Let's journey together`);
-//     },
-//     error: function (error) {
-//       console.error('Error:', error);
-//     }
-//   });
 // });
+
+$('#userForm').submit(function (event) {
+  event.preventDefault();
+  $('#typed-text').text(`We are freind now! Let's journey together `);
+  
+  const formData = {
+    firstName: $('#firstName').val(),
+    email: $('#email').val(),
+    msg: $('#msg').val()
+  };
+
+  // Send form data to server
+  $.ajax({
+    type: 'POST',
+    url: 'sendMail.php',
+    data: formData,
+    success: function (response) {
+      // Handle the response from the server (if needed)
+      console.log(response);
+      $('#typed-text').text(`We are friends now! Let's journey together`);
+    },
+    error: function (error) {
+      console.error('Error:', error);
+    }
+  });
+});
 
 
 // Initial setup
