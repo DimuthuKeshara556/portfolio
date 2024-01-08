@@ -438,7 +438,7 @@
       <h2 class="section-hedding hidden">Contact us</h2>
       <div class="container">
         <div class="form-container">
-          <form id="userForm">
+          <form action="sendMail.php" method="post" id="userForm" onsubmit="clearForm(); return false;">
             <div class="step" id="step1">
               <h3>Connect with US!</h3>
               <div class="input-container">
@@ -464,7 +464,7 @@
                 <input type="email" id="email" name="email" required />
                 <div class="underline"></div>
               </div>
-              <button type="button" onclick="prevStep(1)">Previous</button>
+              <button class="previousBtn" type="button" onclick="prevStep(1)">Previous</button>
               <button style="display: none" type="button" onclick="nextStep(3)">
                 Next
               </button>
@@ -478,7 +478,7 @@
                 <div class="underline"></div>
               </div>
 
-              <button type="button" onclick="prevStep(2)">Previous</button>
+              <button class="previousBtn" type="button" onclick="prevStep(2)">Previous</button>
               <button style="display: none" type="button" onclick="nextStep(4)">
                 Next
               </button>
@@ -487,8 +487,10 @@
             <div class="step" id="step4">
               <h3>Double check your email and Submit</h3>
               <div id="reviewDetails"></div>
-              <button type="button" onclick="prevStep(3)">Previous</button>
-              <button type="submit">Submit</button>
+              <div class="formBtn">
+                <button class="previousBtn" type="button" onclick="prevStep(3)">Previous</button>
+                <button class="previousBtn" type="submit">Submit</button>
+              </div>
             </div>
           </form>
         </div>

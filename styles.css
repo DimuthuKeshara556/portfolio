@@ -697,7 +697,7 @@ header nav ul li:hover {
   grid-column-gap: 36px;
   grid-row-gap: 27px;
   height: 100%;
-  width: 80vw;
+  width: auto;
   justify-content: center;
   align-items: center;
 }
@@ -752,6 +752,7 @@ header nav ul li:hover {
 }
 
 /* Contact us CSS */
+
 #homeButton {
   display: inline-block;
   cursor: pointer;
@@ -783,6 +784,7 @@ header nav ul li:hover {
   background-color: #9d76c1;
   color: white;
 }
+
 #userForm {
   border-radius: 20px;
   padding: 20px;
@@ -835,22 +837,27 @@ header nav ul li:hover {
   background-color: var(--white);
   animation: blinkCursor 0.7s infinite;
 }
+
 .imgcontainer {
   max-width: 350px;
   text-align: center;
 }
+
 .imgcontainer div {
   bottom: 100px;
 }
+
 .imgcontainer img {
   bottom: 0;
   width: 100%;
 }
+
 .input-container {
   position: relative;
   margin: 50px auto;
   width: 200px;
 }
+
 .input-container input[type="email"] {
   font-size: 18px;
   width: 100%;
@@ -861,6 +868,7 @@ header nav ul li:hover {
   outline: none;
   color: var(--white);
 }
+
 .input-container input[type="text"] {
   font-size: 18px;
   width: 100%;
@@ -871,6 +879,7 @@ header nav ul li:hover {
   outline: none;
   color: var(--white);
 }
+
 .input-container .label {
   position: absolute;
   top: 0;
@@ -886,6 +895,7 @@ header nav ul li:hover {
   font-size: 16px;
   color: #cd62ff;
 }
+
 .input-container input[type="email"]:focus ~ .label,
 .input-container input[type="email"]:valid ~ .label {
   top: -20px;
@@ -909,22 +919,22 @@ header nav ul li:hover {
   transform: scaleX(1);
   border-bottom: none;
 }
+
 .input-container input[type="email"]:focus ~ .underline,
 .input-container input[type="email"]:valid ~ .underline {
   transform: scaleX(1);
+}
+
+.formBtn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
 }
-
-/* input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-} */
 
 button {
   color: var(--white);
@@ -935,68 +945,19 @@ button {
   font-size: 16px;
 }
 
-/* .form_class button:hover {
-  background-color: #9c22a0;
-} */
-
 #contact_us {
   height: 90vh;
   background-image: linear-gradient(180deg, #9858c7, #3e1a62);
   padding: 0 20px;
 }
+
 #contact_us h2 {
   padding-top: 50px;
   margin-bottom: 0px;
   color: var(--white);
   display: none;
 }
-/* .parent-contact {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-} */
-/* .form_class {
-  max-width: 270px;
-  max-height: 70vh;
-  color: var(--white);
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(236, 198, 198, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.7px);
-  -webkit-backdrop-filter: blur(6.7px);
-  border: 1px solid rgba(255, 255, 255, 0.47);
-  padding: 20px;
-  margin-top: 50px;
-} */
-/* .form_class p {
-  font-size: 20px;
-  font-family: "Kodchasan", sans-serif;
-  padding: 20px;
-}
-.form_class input,
-textarea {
-  border-radius: 15px;
-  border: 0px;
-}
-.form_class button {
-  border-radius: 15px;
-  background-color: #9d76c1;
-  color: var(--white);
-} */
-.submit :hover {
-  background-color: #4f3369;
-}
-/* .back {
-  width: 200px;
-  padding-right: 50px;
-} */
+
 .button {
   display: flex;
   text-decoration: none;
@@ -1022,6 +983,7 @@ textarea {
 .button:hover {
   background-color: #372063;
 }
+
 /* Footer section CSS */
 footer {
   display: flex;
@@ -1568,3 +1530,6 @@ footer p {
     opacity: 1;
   }
 }
+
+
+
