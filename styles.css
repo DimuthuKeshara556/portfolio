@@ -32,6 +32,7 @@ a {
 }
 
 .section-hedding {
+  font-family: "Inter", sans-serif;
   color: var(--heading_color);
   font-size: 40px;
   padding-left: 50px 50px 0px 0px;
@@ -336,6 +337,9 @@ header nav ul li:hover {
   margin: 0px 20px;
   align-items: center;
 }
+.headerSection p{
+  font-family: "Inter", sans-serif;
+}
 .headerSection img {
   width: 30px;
 }
@@ -491,29 +495,9 @@ header nav ul li:hover {
   align-items: center;
   padding-top: 50px;
 }
-/* .parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 10px;
-  width: fit-content;
+#skils-section h4 {
+  font-family: "Kodchasan", sans-serif;
 }
-
-.skill-item1 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.skill-item2 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.skill-item3 {
-  grid-area: 2 / 3 / 3 / 4;
-}
-.skill-item4 {
-  grid-area: 2 / 4 / 3 / 5;
-}
-.skill-item5 {
-  grid-area: 2 / 5 / 3 / 6;
-}*/
 .grid-img {
   width: 100px;
 }
@@ -567,6 +551,7 @@ header nav ul li:hover {
   margin-left: 5px;
 }
 .about-div2 h1 {
+  font-family: "Inter", sans-serif;
   font-size: 12rem;
   margin: 0 20px;
   color: #421d66;
@@ -575,6 +560,7 @@ header nav ul li:hover {
   grid-area: 2 / 2 / 4 / 3;
 }
 .about-name h1 {
+  font-family: "Inter", sans-serif;
   transform: rotate(270deg);
   color: #3f1c61;
   font-size: 70px;
@@ -638,6 +624,7 @@ header nav ul li:hover {
   width: 50vw;
 }
 .edu-logo {
+  font-family: "Inter", sans-serif;
   font-size: 50px;
   font-weight: bold;
   background-color: rgb(186, 186, 243);
@@ -648,6 +635,7 @@ header nav ul li:hover {
   left: -55px;
 }
 .edu_logoR {
+  font-family: "Inter", sans-serif;
   font-size: 50px;
   font-weight: bold;
   background-color: rgb(186, 186, 243);
@@ -659,6 +647,12 @@ header nav ul li:hover {
 }
 .edu-relative {
   position: relative;
+}
+.education h3 {
+  font-family: "Inter", sans-serif;
+}
+.education p {
+  font-family: "Kodchasan", sans-serif;
 }
 .edu-div1 {
   grid-area: 1 / 1 / 2 / 2;
@@ -691,6 +685,10 @@ header nav ul li:hover {
   padding: 50px 0px;
   margin-bottom: 50px;
 }
+#project-section h3 {
+  font-family: "Kodchasan", sans-serif;
+}
+
 .project-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -705,11 +703,15 @@ header nav ul li:hover {
   width: 280px;
   border-radius: 20px;
 }
+.project-parent a {
+  font-family: "Kodchasan", sans-serif;
+}
 .project-parent button {
   border-radius: 20px;
 }
 .project-parent h1 {
   color: var(--heading_color);
+  font-family: "inter", sans-serif;
 }
 
 .tecnology {
@@ -731,6 +733,8 @@ header nav ul li:hover {
   height: auto;
 }
 .grid-item p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
   text-align: center;
   line-height: 1.5;
   color: var(--heading_color);
@@ -946,6 +950,7 @@ button {
 }
 
 #contact_us {
+  
   height: 90vh;
   background-image: linear-gradient(180deg, #9858c7, #3e1a62);
   padding: 0 20px;
@@ -986,6 +991,7 @@ button {
 
 /* Footer section CSS */
 footer {
+  font-family: "Kodchasan", sans-serif;
   display: flex;
   width: 80%;
   align-items: center;
@@ -1246,6 +1252,16 @@ footer p {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+  .project-parent h1{
+   font-size: larger;
+  }
+  .project-parent a{
+   font-size: small;
+  }
+  .tecnology p{
+   font-size: medium;
+  }
+
   #project-section {
     padding: 50px 0px;
   }
@@ -1292,6 +1308,10 @@ footer p {
 
   .grid-img {
     width: 80px;
+  }
+  .grid-item p{
+    font-size: small;
+    padding: 4px;
   }
   .grid-div {
     display: flex;
@@ -1530,6 +1550,3 @@ footer p {
     opacity: 1;
   }
 }
-
-
-
