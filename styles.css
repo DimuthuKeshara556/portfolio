@@ -1271,6 +1271,9 @@ footer p {
   #education-section {
     padding-top: 20px;
   }
+  .education h3 {
+    font-size: large;
+  }
   .education-parent {
     width: 220px;
   }
