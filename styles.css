@@ -700,7 +700,7 @@ header nav ul li:hover {
   align-items: center;
 }
 .project-parent img {
-  width: 280px;
+  width: 100%;
   border-radius: 20px;
 }
 .project-parent a {
@@ -745,7 +745,7 @@ header nav ul li:hover {
 .project-center {
   display: flex;
   flex-direction: column;
-  height: auto;
+  /* height: auto; */
   max-width: 300px;
   height: 430px;
   align-items: center;
@@ -1065,7 +1065,7 @@ footer p {
     padding: 50px 0px;
   }
   .project-center {
-    max-width: 280px;
+    max-width: 260px;
   }
   .sub-section img {
     left: 85px;
@@ -1266,7 +1266,7 @@ footer p {
     padding: 50px 0px;
   }
   .project-center {
-    max-width: 280px;
+    max-width: 260px;
   }
   #education-section {
     padding-top: 20px;
