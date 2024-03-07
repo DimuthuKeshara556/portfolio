@@ -459,12 +459,84 @@ header nav ul li:hover {
   height: 100%;
 }
 .links img {
-  width: 30px;
-  padding: 10px;
+  width: 26px;
+  padding: 5px;
 }
 .links img:hover {
   animation: shake-rotate 0.5s ease-in-out;
 }
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  height: 100px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.bottom {
+  padding-right: 100px;
+  padding-top: 0px;
+}
+
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #210342;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(1.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  color: #130233;
+  bottom: 10px;
+  left: -5%;
+  transform: translate(0%) rotate(45deg);
+  /* transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+}
+
+.wrapper .icon:hover .tooltip {
+  top: 5px;
+  left: 55px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
 .custom-shape-divider-top-1702990715 {
   position: absolute;
   top: 600px;
@@ -574,7 +646,7 @@ header nav ul li:hover {
   width: 350px;
   font-size: 20px;
   font-family: "Kodchasan", sans-serif;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 /* Education section CSS */
