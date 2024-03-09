@@ -127,7 +127,7 @@ header nav ul li:hover {
   content: "";
   display: block;
   width: 30px;
-  height: 20px;
+  height: 16px;
   z-index: 20;
   top: 0;
   left: 0;
@@ -1275,6 +1275,9 @@ footer p {
     width: 300px;
     height: 101vh;
   } */
+  header p{
+    font-size: 17px;
+  }
   .nav ul li a {
     font-size: 3vh;
   }
@@ -1354,6 +1357,7 @@ footer p {
   }
   .project-center {
     max-width: 260px;
+    height: auto;
   }
   #education-section {
     padding-top: 20px;
